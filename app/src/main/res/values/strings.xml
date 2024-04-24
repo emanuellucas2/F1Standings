@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">F1 Standings</string>
+    <string name="drivers">Drivers</string>
+    <string name="constructors">Constructors</string>
+    <!--    Toast messages -->
+    <string name="an_error_occurred">Um erro ocorreu!</string>
+</resources>
