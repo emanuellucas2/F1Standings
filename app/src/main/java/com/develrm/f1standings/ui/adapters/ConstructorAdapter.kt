@@ -20,7 +20,7 @@ class ConstructorAdapter : RecyclerView.Adapter<ConstructorAdapter.ConstructorVi
         }
 
         override fun areContentsTheSame(oldItem: ConstructorModel, newItem: ConstructorModel): Boolean {
-            return oldItem.position == newItem.position && oldItem.constructor == newItem.constructor &&
+            return oldItem.position == newItem.position && oldItem.name == newItem.name &&
                     oldItem.points == newItem.points && oldItem.urlImage == newItem.urlImage
         }
 
@@ -46,7 +46,7 @@ class ConstructorAdapter : RecyclerView.Adapter<ConstructorAdapter.ConstructorVi
     override fun onBindViewHolder(holder: ConstructorViewHolder, position: Int) {
         val constructor = constructor[position]
         holder.binding.apply {
-            tvName.text = constructor.constructor
+            tvName.text = constructor.name
             tvPoints.text = constructor.points
             tvPosition.text = constructor.position
 

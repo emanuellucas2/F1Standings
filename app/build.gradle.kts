@@ -98,4 +98,10 @@ dependencies {
     implementation("com.google.firebase:firebase-database")
 
 
+    implementation ("com.google.android.play:integrity:1.3.0")
+    implementation("com.google.firebase:firebase-appcheck-playintegrity:17.1.2")
+
+    //implementation("com.google.firebase:firebase-appcheck-debug")
+
+
 }
